@@ -17,12 +17,18 @@ dotenv.config();
 
 const app = express();
 
+
 const allowedOrigins = [
   "http://localhost:5173",
-  // Add your production domain here
-  "pestcontrolbeckenham.uk",
-  "www.pestcontrolbeckenham.uk"
+
+  // Vercel Frontend
+  "https://qucikpes-frontend.vercel.app",
+
+  // Production Domain
+  "https://pestcontrolbeckenham.uk",
+  "https://www.pestcontrolbeckenham.uk",
 ];
+
 
 app.use(
   cors({
