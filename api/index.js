@@ -20,6 +20,8 @@ const app = express();
 const allowedOrigins = [
   "http://localhost:5173",
   // Add your production domain here
+  "pestcontrolbeckenham.uk",
+  "www.pestcontrolbeckenham.uk"
 ];
 
 app.use(
